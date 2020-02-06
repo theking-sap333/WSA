@@ -1,0 +1,113 @@
+@font-face {
+    font-family: KaushanScript;
+    src: url(./KaushanScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: monster;
+    src: url(./font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: dancingFont;
+    src: url(./dancingfont/GreatVibes-Regular.ttf);
+}
+
+.goldfont {
+    color: #d1df0e
+}
+
+.monster {
+    font-family: monster;
+}
+
+body {
+    font-family: kaushanScript;
+}
+
+h2 {
+    font-family: dancingFont;
+    color: #d1df0e;
+}
+
+p {
+    font-family: monster;
+}
+
+button {
+    font-family: monster;
+}
+
+.home-bg-img {
+    background-image: url(./Granny/home-img.png);
+    width: 100%;
+    height: 660px;
+}
+
+.gold {
+    color: #d1df0e;
+}
+
+.nav-sea-img {
+    width: 25px;
+    height: 25px;
+}
+
+.our-bg-img {
+    background-image: url(./Granny/ourBGImg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+}
+
+.menu-bg-img {
+    position: absolute;
+    top: 2950px;
+    background-image: url(./Granny/13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* object-fit: fill; */
+    width: 100%;
+    height: 1000px;
+}
+
+.card-img-top {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.guest-bg-img {
+    background-image: url(./Granny/ourBGImg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 730px;
+}
+
+.GoldenStar {
+    width: 25px;
+    height: 25px;
+}
+
+.dis-img {
+    height: 200px;
+    width: 290px;
+}
+
+.dot-border {
+    border-bottom: 1px dashed rgb(37, 37, 37);
+}
+
+.social-img {
+    width: 50px;
+    height: 50px;
+}
+
+.Search-arr {
+    width: 25px;
+    height: 25px;
+}

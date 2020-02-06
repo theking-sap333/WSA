@@ -1,0 +1,272 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="py-5">
+        <!-- creating the search input -->
+        <div class="w-75 mx-auto">
+            <div class="input-group w-50 ml-auto mb-5">
+                <input id="inpSearch" type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button onclick="searchB()" class="btn btn-outline-secondary btn-primary w-50"><img src="./iconmonstr-magnifier-6-96.png" class="w-50"></button>
+                </div>
+            </div>
+            <h1 class="text-center pb-4">My To Do List</h1>
+            <!-- creating table -->
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Priority</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">End Date</th>
+                        <th scope="col">Complete</th>
+                        <th scope="col">Edit / Delete</th>
+                    </tr>
+                    <tbody id="tbody"></tbody>
+                </thead>
+            </table>
+            <div class="w-50 my-5">
+                <form name="form1">
+                    <div class="form-group">
+                        <label for="FormControl">Name</label>
+                        <input type="text" id="name" class="form-control mb-3" placeholder="Enter your Name">
+                        <p id="nameC" class="text-danger"></p>
+                        <label for="FormControl">Category</label>
+                        <select class="custom-select mb-2" id="catdrop">
+                                <option selected>Select Category</option>
+                                <option class="value1">Study</option>
+                                <option class="value2">Work</option>
+                                <option class="value3">Play</option>
+                            </select>
+                        <p id="catC" class="text-danger"></p>
+                        <label for="FormControl">Priority</label>
+                        <select class="custom-select mb-2" id="pridrop">
+                                <option selected>Select Priority</option>
+                                <option class="value1">High</option>
+                                <option class="value2">Medium</option>
+                                <option class="value3">Low</option>
+                            </select>
+                        <p id="priC" class="text-danger"></p>
+                        <label for="FormControl">Start Date</label>
+                        <input type="date" class="form-control mb-3" id="sDate">
+                        <p id="sDateC" class="text-danger"></p>
+                        <label for="FormControl">End Date</label>
+                        <input type="date" class="form-control" id="eDate">
+                        <p id="eDateC" class="text-danger"></p>
+                    </div>
+                </form>
+                <input class="mt-5 btn btn-primary" onclick="toDoInput()" type="submit" value="submit">
+                <input class="mt-5 btn btn-primary" type="submit" id="update" value="Update">
+            </div>
+        </div>
+    </div>
+    <script>
+        // function create for checking the input value is emepty, then show the error message
+        // taking values from user
+        // storing values as object
+        // storing values inside local storage
+        function toDoInput() {
+            // taking values from user
+            var nam = document.getElementById("name").value;
+            //checking the input value is emepty, then show the error message
+            if (nam == "") {
+                document.getElementById("nameC").innerHTML = "please enter your name *";
+            }
+            // console.log(nam);
+            var cat = document.getElementById("catdrop");
+            var catOption = cat.options[cat.selectedIndex].text;
+            if (catOption == "Select Category") {
+                document.getElementById("catC").innerHTML = "please select the category option *";
+            }
+
+            var dropOpt = document.getElementById("pridrop");
+            var dropOpt1 = dropOpt.options[dropOpt.selectedIndex].text;
+            if (dropOpt1 == "Select Priority") {
+                document.getElementById("priC").innerHTML = "please select the priority option *";
+            }
+            // console.log(dropOpt1);
+            var startDate = document.getElementById("sDate").value;
+            if (startDate == "") {
+                document.getElementById("sDateC").innerHTML = "please enter the start date *";
+            }
+            // console.log(startDate);
+            var endDate = document.getElementById("eDate").value;
+            if (endDate == "") {
+                document.getElementById("eDateC").innerHTML = "please enter the end date *";
+                return false;
+            }
+            // storing values as object
+            var formData = {
+                    Fname: nam,
+                    Fcategory: catOption,
+                    Fdrop: dropOpt1,
+                    FstartDate: startDate,
+                    FendDate: endDate,
+                    checkedB: false
+                }
+                // taking date as storage key for storing the value as particular values
+            var d = Date.now();
+            // storing values inside local storage
+            localStorage.setItem(d, JSON.stringify(formData));
+            // using TableValue() get access for taking the values from toDoInput()
+            TableValue();
+        }
+        TableValue();
+        // TableValue() created to get the stored values from localstorage
+        // fetching the values from local storage
+        // creating new table to show the local storage values
+        // creating new ckeckbox
+        // creating new buttons for delete and edit the table values inside every rows of values 
+        function TableValue() {
+            var keyAray = Object.keys(localStorage);
+            var tabCreate = document.getElementById("tbody");
+            tabCreate.innerHTML = "";
+            // fetching the values from local storage
+            for (let i = 0; i < keyAray.length; i++) {
+                var keY1 = localStorage.getItem(keyAray[i]);
+                keY1 = JSON.parse(keY1);
+                // console.log(typeof(keY1));
+                // creating new table to show the local storage values
+                var rowCreate = tabCreate.insertRow(0);
+                // setting id as local storage keys to every row of datas 
+                rowCreate.setAttribute("id", keyAray[i]);
+                cell1 = rowCreate.insertCell(0);
+                cell2 = rowCreate.insertCell(1);
+                cell3 = rowCreate.insertCell(2);
+                cell4 = rowCreate.insertCell(3);
+                cell5 = rowCreate.insertCell(4);
+                cell6 = rowCreate.insertCell(5);
+                cell7 = rowCreate.insertCell(6);
+                // appending the values of localstorage into every cells of table
+                cell1.innerHTML = keY1.Fname;
+                cell2.innerHTML = keY1.Fcategory;
+                // console.log(cell2);
+                cell3.innerHTML = keY1.Fdrop;
+                cell4.innerHTML = keY1.FstartDate;
+                cell5.innerHTML = keY1.FendDate;
+                var checkCreate = document.createElement("input");
+                checkCreate.setAttribute("type", "checkbox");
+                checkCreate.setAttribute("id", "checkB");
+                checkCreate.setAttribute("class", "checkB");
+                checkCreate.checked = keY1.checkedB;
+                // console.log(keY1.checkedB);
+                // creating new ckeckbox inside every rows
+                cell6.appendChild(checkCreate);
+                var button1 = document.createElement("input");
+                button1.setAttribute("id", "editbt");
+                button1.setAttribute("type", "button");
+                button1.setAttribute("value", "edit");
+                button1.setAttribute("class", "editbt btn btn-primary");
+                cell7.appendChild(button1);
+                if (keY1.checkedB == true) {
+                    button1.style.visibility = "hidden";
+                } else {
+                    button1.style.visibility = "visible";
+                }
+                //when user click on check box it hide the edit button and store the value into local storage
+                checkCreate.addEventListener("click", function() {
+                    var c = document.getElementsByClassName("checkB");
+                    var editR = document.getElementsByClassName("editbt");
+                    // console.log(editR[0]);
+                    for (let i = 0; i < c.length; i++) {
+                        var a = c[i].parentNode.parentNode.id;
+                        var b = localStorage.getItem(a);
+                        b = JSON.parse(b);
+                        // alert(editR[0]);
+                        // console.log(b);
+                        if (c[i].checked == true) {
+                            editR[i].style.visibility = "hidden";
+                            b.checkedB = true;
+                            // console.log(b.checkedB);
+                        } else {
+                            b.checkedB = false;
+                            editR[i].style.visibility = "visible";
+                            // console.log(b.checkedB);
+                        }
+                        localStorage.setItem(a, JSON.stringify(b));
+                        TableValue();
+                    }
+                });
+                // when user click on edit button on particular row 
+                // using this function to show the existing values of rows in same input boxes
+                // we can edit the values and
+                // set the values in same object in local storage we set the values alredy 
+                // storing the values in local storage on click update button
+                button1.addEventListener("click", function() {
+                    let selectedRow = this.parentNode.parentNode;
+                    // console.log(selectedRow);
+                    //show the existing values of rows in same input boxes
+                    document.getElementById("update").addEventListener("click", resetList);
+                    var a = document.getElementById("name").value = selectedRow.cells[0].innerHTML;
+                    var b = document.getElementById("catdrop").value = selectedRow.childNodes[1].innerHTML;
+                    var c = document.getElementById("pridrop").value = selectedRow.cells[2].innerHTML;
+                    var d = document.getElementById("sDate").value = selectedRow.cells[3].innerHTML;
+                    var e = document.getElementById("eDate").value = selectedRow.cells[4].innerHTML;
+                    // set the values in same object in local storage we set the values alredy
+                    function UpdateObj() {
+                        var Obj = {
+                            Fname: document.getElementById("name").value,
+                            Fcategory: document.getElementById("catdrop").value,
+                            Fdrop: document.getElementById("pridrop").value,
+                            FstartDate: document.getElementById("sDate").value,
+                            FendDate: document.getElementById("eDate").value,
+                            checkedB: document.getElementById("checkB").checked
+                        }
+                        console.log(Obj.Fcategory);
+                        return JSON.stringify(Obj);
+                    }
+                    // storing the values in local storage 
+                    function resetList() {
+                        var num = UpdateObj();
+                        localStorage.setItem(selectedRow.id, num);
+                        TableValue();
+                    }
+                });
+                // using delete button to delete the perticular row from table and local storage
+                var button2 = document.createElement("input");
+                button2.setAttribute("id", "deletebt");
+                button2.setAttribute("type", "button");
+                button2.setAttribute("value", "delete");
+                button2.setAttribute("class", "btn btn-danger");
+                cell7.appendChild(button2);
+                button2.addEventListener('click', function() {
+                    let a = this.parentNode.parentNode.id;
+                    console.log(a);
+                    localStorage.removeItem(a);
+                    // updating the table values
+                    TableValue();
+                });
+            }
+        }
+        // using search input search by name in a table
+        // if that perticular name is found, hide the other table data rows
+        function searchB() {
+            // alert('a')
+            var c = document.getElementById("inpSearch").value;
+            var a = document.getElementsByClassName("checkB");
+            for (let i = 0; i < a.length; i++) {
+                var d = a[i].parentNode.parentNode;
+                var b = d.childNodes[0].innerHTML
+                if (c == b) {
+                    d.style.visibility = "visible"
+                } else {
+                    d.style.display = "none"
+                }
+            }
+        }
+    </script>
+</body>
+<script src="./jquery-3.4.1.min.js"></script>
+<script src="./popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+</html>

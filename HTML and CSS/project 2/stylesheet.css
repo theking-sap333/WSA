@@ -1,0 +1,1092 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.home-page {
+    color: white;
+    background: #04011f;
+    width: 100%;
+    height: 650px;
+}
+
+.nav-menu {
+    top: 0px;
+    position: fixed;
+    background: #04011f;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo {
+    cursor: pointer;
+    width: 300px;
+    margin-left: 50px;
+    font-size: 36px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.logo span {
+    font-size: 52px;
+    position: relative;
+    top: 5px;
+}
+
+.navigation {
+    position: absolute;
+    top: 40px;
+    left: 430px;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation li {
+    display: block;
+    float: left;
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.home-page-cont {
+    display: grid;
+}
+
+.home-content {
+    grid-area: 1/1/2/2;
+    width: 560px;
+    margin-left: 50px;
+    margin-top: 95px;
+}
+
+.home-content h3 {
+    font-size: 26px;
+}
+
+.home-content h1 {
+    margin: 0;
+    font-size: 58px;
+}
+
+.home-content p {
+    font-size: 18px;
+}
+
+.app-download {
+    display: grid;
+    margin-top: 45px;
+}
+
+.appstore-download {
+    grid-area: 1/1/2/2;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid gold;
+    border-radius: 5px;
+    width: 220px;
+    height: 55px;
+    padding-top: 15px;
+}
+
+.appstore-download:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, gold, #04011f);
+}
+
+.apple-img {
+    width: 50px;
+    height: 50px;
+}
+
+.store-img {
+    width: 50px;
+    height: 50px;
+    margin-top: -5px;
+    padding-left: 10px;
+}
+
+.appstore {
+    padding-left: 20px;
+}
+
+.appstore p {
+    margin: 0;
+}
+
+.appstore h4 {
+    margin: 0;
+}
+
+.playstore-download {
+    grid-area: 1/2/2/3;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid gold;
+    border-radius: 5px;
+    width: 220px;
+    height: 55px;
+    padding-top: 15px;
+}
+
+.playstore-download:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, green, #04011f);
+}
+
+.android-img {}
+
+.playstore {
+    padding-left: 25px;
+}
+
+.playstore p {
+    margin: 0;
+}
+
+.playstore h4 {
+    margin: 0;
+}
+
+
+/******************************************************************************************/
+
+.input-container {
+    grid-area: 1/2/2/3;
+    margin-top: 100px;
+    margin-left: 10px;
+    width: 545px;
+}
+
+.home-input {
+    background-color: aliceblue;
+    padding: 21px;
+}
+
+.input-container h3 {
+    text-align: center;
+}
+
+.input-field {
+    height: 45px;
+    width: 496px;
+    margin-bottom: 25px;
+}
+
+.first-name {
+    height: 45px;
+    width: 240px;
+    margin-right: 15px;
+}
+
+.last-name {
+    height: 45px;
+    width: 240px;
+}
+
+.home-input-button {
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    width: 496px;
+    height: 50px;
+    font-weight: bold;
+}
+
+.home-input p {
+    text-align: center;
+    color: darkgray;
+}
+
+.home-input span {
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+
+
+/***********************************************************************************/
+
+.crypto-price {
+    display: flex;
+    flex-direction: row;
+    margin-left: 115px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.crypto-price p {}
+
+.bitcoin {
+    margin-right: 110px;
+}
+
+.mcoin {
+    margin-right: 110px;
+}
+
+.ethurium {
+    margin-right: 110px;
+}
+
+.litecoin {
+    margin-right: 110px;
+}
+
+.bitcoincash {
+    margin-right: 110px;
+}
+
+.ripple {
+    margin-right: 110px;
+}
+
+.crypto-img {
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+}
+
+
+/*****************************************************************************************/
+
+.aboutus {
+    margin-top: 70px;
+}
+
+.aboutus h1 {
+    text-align: center;
+}
+
+.head-underline {
+    width: 100px;
+    height: 1px;
+    background-color: orangered;
+    margin-left: 623px;
+}
+
+.head-underline::before {
+    width: 25px;
+    height: 2px;
+    background-color: orangered;
+}
+
+.head-underline::after {
+    width: 25px;
+    height: 2px;
+    background-color: orangered;
+}
+
+.about-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+}
+
+.about-flex-left {
+    width: 600px;
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.about-flex-right {
+    width: 600px;
+    margin-left: 50px;
+}
+
+
+/**********************************************************************************************/
+
+.steps-to-buy {
+    margin-top: 70px;
+}
+
+.steps-to-buy h1 {
+    text-align: center;
+}
+
+.step-grid {
+    display: grid;
+    margin-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 55px;
+}
+
+.first-step {
+    grid-area: 1/1/2/2;
+    display: flex;
+    flex-direction: row;
+}
+
+.first-step h1 {
+    font-size: 42px;
+    margin-top: 15px;
+}
+
+.step-number {}
+
+.step-cont {
+    width: 170px;
+    margin-left: 15px;
+    padding-bottom: 50px;
+}
+
+.step-cont p {
+    font-size: 18px;
+}
+
+.step-cont span {
+    cursor: pointer;
+    text-decoration: underline;
+    color: orangered;
+    font-weight: bold;
+}
+
+.first-to-second {
+    grid-area: 1/2/2/3;
+}
+
+.goto {
+    width: 50px;
+    height: 50px;
+    transform: rotate(90deg);
+    margin-top: 15px;
+}
+
+.second-step {
+    grid-area: 1/3/2/4;
+    display: flex;
+    flex-direction: row;
+}
+
+.second-step h1 {
+    font-size: 42px;
+    margin-top: 15px;
+}
+
+.second-to-third {
+    grid-area: 1/4/2/5;
+}
+
+.third-step {
+    grid-area: 1/5/2/6;
+    display: flex;
+    flex-direction: row;
+}
+
+.third-step h1 {
+    font-size: 42px;
+    margin-top: 15px;
+}
+
+
+/***********************************************************************************************/
+
+.why-choose-us {
+    background-color: darkgray;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.why-h4 {
+    text-align: center;
+}
+
+.why-grid {
+    display: grid;
+    grid-gap: 30px;
+    width: 1215px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.why-para {
+    text-align: center;
+}
+
+.fair-grid {
+    grid-area: 1/1/2/2;
+}
+
+.why-grid-img {
+    width: 70px;
+    height: 70px;
+    margin-left: 105px;
+}
+
+.fast-grid {
+    grid-area: 1/2/2/3;
+}
+
+.secure-grid {
+    grid-area: 1/3/2/4;
+}
+
+.multicoin-grid {
+    grid-area: 1/4/2/5;
+}
+
+.online-payment-grid {
+    grid-area: 2/1/3/2;
+}
+
+.legel-grid {
+    grid-area: 2/2/3/3;
+}
+
+.commision-grid {
+    grid-area: 2/3/3/4;
+}
+
+.withdraw-grid {
+    grid-area: 2/4/3/5;
+}
+
+.why-choose-us h1 {
+    text-align: center;
+}
+
+
+/********************************************************************************************/
+
+.buy-sellcrypto {
+    display: grid;
+    grid-gap: 30px;
+    padding-bottom: 100px;
+}
+
+.crypto-video {
+    grid-area: 1/1/2/2;
+}
+
+.video {
+    margin-top: 150px;
+    margin-left: 30px;
+    width: 650px;
+}
+
+.buy-sellcrypto-cont {
+    grid-area: 1/2/2/3;
+    width: 600px;
+    padding-top: 100px;
+}
+
+.buy-sellcrypto-cont h1 {
+    font-size: 44px;
+}
+
+.buy-sellcrypto-cont p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+/************************************************************************************************/
+
+.your-portfolio {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: darkgray;
+}
+
+.your-portfolio h1 {
+    text-align: center;
+}
+
+.your-portfolio-grid {
+    display: grid;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+/***********************************************************************************************/
+
+.portfolio-left-cont {
+    grid-area: 1/1/2/2;
+    display: grid;
+}
+
+.right-portfolio-grid {
+    grid-area: 1/2/2/3;
+}
+
+.right-portfolio-img {
+    width: 600px;
+}
+
+
+/***********************************************************************************************/
+
+.manage-portfolio-grid {
+    grid-area: 1/1/2/2;
+    display: grid;
+}
+
+.manage-img {
+    grid-area: 1/1/2/2;
+}
+
+.portfolio-grid-img {
+    width: 50px;
+    height: 50px;
+}
+
+.manage-head {
+    grid-area: 1/2/2/3;
+    position: relative;
+    left: -160px;
+}
+
+.manage-para {
+    grid-area: 2/1/3/3;
+}
+
+.vault-protection-grid {
+    grid-area: 2/1/3/2;
+    display: grid;
+}
+
+.vault-grid-img {
+    grid-area: 1/1/2/2;
+}
+
+.vault-head {
+    grid-area: 1/2/2/3;
+    position: relative;
+    left: -160px;
+}
+
+.vault-para {
+    grid-area: 2/1/3/3;
+}
+
+.mobile-app-grid {
+    grid-area: 3/1/4/2;
+    display: grid;
+}
+
+.mobile-grid-img {
+    grid-area: 1/1/2/2;
+}
+
+.mobile-head {
+    grid-area: 1/2/2/3;
+    position: relative;
+    left: -180px;
+}
+
+.mobile-para {
+    grid-area: 2/1/3/3;
+}
+
+
+/************************************************************************************************/
+
+.buy-cryptocurrency {
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.buy-cryptocurrency h1 {
+    text-align: center;
+}
+
+.buy-first-content {
+    text-align: center;
+}
+
+.buy-first-content h3 {
+    margin-top: 50px;
+    font-size: 26px;
+}
+
+.buy-first-content p {
+    font-size: 18px;
+}
+
+.buy-input-field {
+    background-color: darkgray;
+    width: 550px;
+    height: 70px;
+    margin-left: 375px;
+    margin-top: 40px;
+}
+
+.buy-input-field p {
+    margin-top: -35px;
+    margin-left: 160px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.input-currency {
+    height: 50px;
+    width: 130px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.input-bitcoin {
+    left: 240px;
+    position: relative;
+    top: -63px;
+    height: 50px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.input-bold {
+    font-weight: bold;
+}
+
+.buy-currrency {
+    position: relative;
+    top: -63px;
+    left: 250px;
+    width: 100px;
+    height: 50px;
+    border-radius: 7px;
+}
+
+.input-button {
+    padding: 10px;
+    width: 130px;
+    background-color: black;
+    color: white;
+    margin-left: 585px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.input-contact {}
+
+.input-contact h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+.input-phone {
+    border: 1px solid orangered;
+    width: 465px;
+    margin-left: 420px;
+}
+
+.input-phone input {
+    height: 39px;
+    width: 330px;
+    border-color: white;
+}
+
+.input-phone button {
+    padding: 10px;
+    width: 130px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/***********************************************************************************************/
+
+.count {
+    margin-top: 100px;
+    display: grid;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 150px;
+    background-color: orangered;
+}
+
+.count-transaction {
+    grid-area: 1/1/2/2;
+}
+
+.count-transaction h1 {
+    margin-left: 35px;
+    font-size: 40px;
+}
+
+.count-transaction p {
+    font-size: 18px;
+}
+
+.number-underline1 {
+    width: 50px;
+    height: 2px;
+    margin-left: 65px;
+    background-color: black;
+}
+
+.count-experiance {
+    grid-area: 1/2/2/3;
+}
+
+.count-experiance h1 {
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.number-underline2 {
+    width: 50px;
+    height: 2px;
+    margin-left: 52px;
+    background-color: black;
+}
+
+.count-experiance p {
+    font-size: 18px;
+}
+
+.count-user {
+    grid-area: 1/3/2/4;
+}
+
+.count-user h1 {
+    margin-left: 2px;
+    font-size: 40px;
+}
+
+.number-underline3 {
+    width: 50px;
+    height: 2px;
+    margin-left: 45px;
+    background-color: black;
+}
+
+.count-user p {
+    font-size: 18px;
+}
+
+.count-award {
+    grid-area: 1/4/2/5;
+}
+
+.count-award h1 {
+    margin-left: 35px;
+    font-size: 40px;
+}
+
+.number-underline4 {
+    width: 50px;
+    height: 2px;
+    margin-left: 35px;
+    background-color: black;
+}
+
+.count-award p {
+    font-size: 18px;
+}
+
+
+/***************************************************************************************************/
+
+.testimonial {
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.testimonial h1 {
+    text-align: center;
+    grid-area: 1/1/2/3;
+}
+
+.test-head-underline {
+    position: relative;
+    top: -180px;
+    left: 625px;
+    width: 100px;
+    height: 1px;
+    background-color: orangered;
+}
+
+.test-head-underline::before {
+    width: 15px;
+    height: 2px;
+    background-color: orangered;
+}
+
+.test-head-underline::after {
+    width: 15px;
+    height: 2px;
+    background-color: orangered;
+}
+
+.test-left-cont {
+    grid-area: 2/1/2/2;
+    margin-top: 30px;
+}
+
+.test-left-cont h1 {
+    text-align: left;
+    padding-left: 50px;
+    font-style: italic;
+}
+
+.test-right-cont {
+    grid-area: 2/2/3/3;
+    margin-top: 50px;
+}
+
+.test-right-cont img {
+    width: 30px;
+    height: 30px;
+}
+
+.test-right-cont h1 {}
+
+.test-right-cont p {}
+
+
+/*******************************************************************************************************/
+
+.questions {
+    margin-top: 50px;
+    display: grid;
+}
+
+.questions h1 {
+    text-align: center;
+}
+
+.question-grid {
+    width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 270px;
+}
+
+.first-question {
+    grid-area: 1/1/2/2;
+    border: 5px solid orange;
+    margin-bottom: 20px;
+}
+
+.first-question p {
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.first-question-head {
+    display: grid;
+}
+
+.first-question-head h3 {
+    grid-area: 1/1/2/2;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.first-question-head img {
+    grid-area: 1/2/2/3;
+    margin-left: 450px;
+    margin-top: 15px;
+}
+
+.arrow-img {
+    width: 50px;
+    height: 50px;
+}
+
+.second-question {
+    grid-area: 2/1/3/2;
+    display: grid;
+    background-color: orange;
+    margin-bottom: 20px;
+}
+
+.second-question h3 {
+    grid-area: 1/1/2/2;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.second-question img {
+    grid-area: 1/2/2/3;
+    margin-left: 450px;
+    margin-left: 390px;
+    margin-top: 15px;
+}
+
+.down-arrow-img {
+    transform: rotate(180deg);
+}
+
+.thrird-question {
+    grid-area: 3/1/4/2;
+    display: grid;
+    background-color: orange;
+    margin-bottom: 20px;
+}
+
+.thrird-question h3 {
+    grid-area: 1/1/2/2;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.thrird-question img {
+    grid-area: 1/2/2/3;
+    margin-left: 450px;
+    margin-left: 340px;
+    margin-top: 15px;
+}
+
+
+/****************************************************************************************************/
+
+.contact {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.head-underline {}
+
+.contact-input-field {
+    margin-left: 500px;
+    margin-top: 70px;
+}
+
+.contact-input-field input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid orange;
+}
+
+.contact-name {
+    width: 450px;
+    height: 60;
+}
+
+.contact-email {
+    width: 450px;
+    height: 60;
+}
+
+.contact-input-field button {
+    width: 150px;
+    height: 45px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 155px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-message {
+    width: 450px;
+    height: 150px;
+}
+
+
+/*************************************************************************/
+
+.footer {
+    margin-top: 50px;
+    background-color: orange;
+    display: grid;
+    padding: 50px;
+}
+
+.left-cont-footer {
+    grid-area: 1/1/2/2;
+    display: grid;
+}
+
+.footer-social {}
+
+.footer-img {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+
+.facebook {}
+
+.twitter {}
+
+.google {
+    width: 35px;
+    height: 35px;
+}
+
+.linkedin {}
+
+.behance {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-nav {
+    margin-top: 20px;
+}
+
+.footer-nav ul {
+    margin-top: 10px;
+    margin-left: -40px;
+}
+
+.footer-nav li {
+    list-style: none;
+    display: block;
+    float: left;
+    padding-right: 25px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-data {
+    display: flex;
+    margin-top: 20px;
+}
+
+.contact-data p {
+    padding-top: 10px;
+}
+
+.email-img {
+    margin-top: 15px;
+}
+
+.call-img {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.right-footer-cont {
+    grid-area: 1/2/2/3;
+    text-align: right;
+}
+
+.footer-head h1 {}
+
+.footer-head span {
+    font-size: 54px;
+    position: relative;
+    top: 8px;
+}

@@ -1,0 +1,230 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Penguin Game</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style1.css">
+</head>
+
+<body>
+    <div class="bg-primary py-5">
+        <h1 class="text-center text-white mt-5"><span class="border-bottom">Find The Penguin</span></h1>
+        <div class="w-75 mx-auto">
+            <div class="row w-100 ml-5">
+                <div class="col-4">
+                    <img id="pos-1" class="pop-img" src=" ./media/mound_1.png ">
+                </div>
+                <div class="col-4 ">
+                    <img id="pos-2" class="pop-img" src="./media/mound_2.png ">
+                </div>
+                <div class="col-4 ">
+                    <img id="pos-3" class="pop-img" src="./media/mound_3.png ">
+                </div>
+                <div class="col-4 ">
+                    <img id="pos-4" class="pop-img" src="./media/mound_4.png ">
+                </div>
+                <div class="col-4 ">
+                    <img id="pos-5" class="pop-img" src="./media/mound_5.png ">
+                </div>
+                <div class="col-4 ">
+                    <img id="pos-6" class="pop-img" src="./media/mound_6.png ">
+                </div>
+                <div class="col-4 ">
+                    <img id="pos-7" class="pop-img" src="./media/mound_7.png ">
+                </div>
+                <div class="col-4 ">
+                    <img id="pos-8" class="pop-img" src="./media/mound_8.png ">
+                </div>
+                <div class="col-4">
+                    <img id="pos-9" class="pop-img" src="./media/mound_9.png ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //using function shuffle to shuffle the elements of array
+        function shuffle(array) {
+            var currentIndex = array.length,
+                temporaryValue, randomIndex;
+
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                // And swap it with the current element.
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+                // console.log(temporaryValue);
+                // console.log(randomIndex);
+            }
+
+            return array;
+        }
+
+        //create new array to store the image
+        var arrA = new Array();
+        //using array index to store the 9 images
+        arrA[0] = new Image();
+        arrA[0].src = './media/penguin_1.png ';
+        arrA[1] = new Image();
+        arrA[1].src = './media/penguin_2.png ';
+        arrA[2] = new Image();
+        arrA[2].src = './media/penguin_3.png ';
+        arrA[3] = new Image();
+        arrA[3].src = './media/penguin_4.png ';
+        arrA[4] = new Image();
+        arrA[4].src = './media/penguin_5.png ';
+        arrA[5] = new Image();
+        arrA[5].src = './media/penguin_6.png ';
+        arrA[6] = new Image();
+        arrA[6].src = './media/penguin_7.png ';
+        arrA[7] = new Image();
+        arrA[7].src = './media/penguin_8.png ';
+        arrA[8] = new Image();
+        arrA[8].src = './media/yeti.png ';
+        // console.log(arrA[].src);
+
+        //using regular expression to find the image url of yeti penguin
+        var chk = new RegExp('yeti');
+        //count is using to find the user is still at the game with out find yeti and show win 
+        var count = 0;
+        var a = document.getElementById("pos-1");
+        // onclick
+        a.addEventListener("click", function() {
+            a.src = arrA[0].src;
+            a.style.backgroundImage = 'none';
+            //using regular expression to checking the array element have the yeti penguin
+            if (chk.test(arrA[0].src)) {
+                window.open('a.html', '_self');
+            }
+            // if yeti is not found count increment in else part 
+            else {
+                count++;
+                // alert(count);
+            }
+            if (count == 8) {
+                window.alert("you won");
+            }
+        });
+        var b = document.getElementById("pos-2");
+        b.addEventListener("click", function() {
+            b.src = arrA[1].src;
+            b.style.backgroundImage = 'none';
+            if (chk.test(arrA[1].src)) {
+                window.open('a.html', '_self');
+            } else {
+                count++;
+                // alert(count);
+                if (count == 8) {
+                    window.alert("you won");
+                }
+            }
+        });
+        var c = document.getElementById("pos-3");
+        c.addEventListener("click", function() {
+            c.src = arrA[2].src;
+            c.style.backgroundImage = 'none';
+            if (chk.test(arrA[2].src)) {
+                window.open('a.html', '_self');
+            } else {
+                count++;
+                if (count == 8) {
+                    window.alert("you won");
+                }
+            }
+        });
+        var d = document.getElementById("pos-4");
+        d.addEventListener("click", function() {
+            d.src = arrA[3].src;
+            d.style.backgroundImage = 'none';
+            if (chk.test(arrA[3].src)) {
+                window.open('a.html', '_self');
+            } else {
+                count++;
+                if (count == 8) {
+                    window.alert("you won");
+                }
+            }
+        });
+        var e = document.getElementById("pos-5");
+        e.addEventListener("click", function() {
+            e.src = arrA[4].src;
+            e.style.backgroundImage = 'none';
+            if (chk.test(arrA[4].src)) {
+                window.open('a.html', '_self');
+            } else {
+                count++;
+                if (count == 8) {
+                    window.alert("you won");
+                }
+            }
+        });
+        var f = document.getElementById("pos-6");
+        f.addEventListener("click", function() {
+            f.src = arrA[5].src;
+            f.style.backgroundImage = 'none';
+            if (chk.test(arrA[5].src)) {
+                window.open('a.html', '_self');
+            } else {
+                count++;
+                if (count == 8) {
+                    window.alert("you won");
+                }
+            }
+        });
+        var g = document.getElementById("pos-7");
+        g.addEventListener("click", function() {
+            g.src = arrA[6].src;
+            g.style.backgroundImage = 'none';
+            if (chk.test(arrA[6].src)) {
+                window.open('a.html', '_self');
+            } else {
+                count++;
+                if (count == 8) {
+                    window.alert("you won");
+                }
+            }
+        });
+        var h = document.getElementById("pos-8");
+        h.addEventListener("click", function() {
+            h.src = arrA[7].src;
+            h.style.backgroundImage = 'none';
+            if (chk.test(arrA[7].src)) {
+                window.open('a.html', '_self');
+            } else {
+                count++;
+                if (count == 8) {
+                    window.alert("you won");
+                }
+            }
+        });
+        var i = document.getElementById("pos-9");
+        i.addEventListener("click", function() {
+            i.src = arrA[8].src;
+            i.style.backgroundImage = 'none';
+            if (chk.test(arrA[8].src)) {
+                window.open('a.html', '_self');
+            } else {
+                count++;
+                if (count == 8) {
+                    window.alert("you won");
+                }
+            }
+        });
+
+        shuffle(arrA);
+        // console.log(arr);
+    </script>
+</body>
+<script src="./jquery-3.4.1.min.js "></script>
+<script src="./popper.min.js "></script>
+<script src="./js/bootstrap.min.js "></script>
+
+</html>

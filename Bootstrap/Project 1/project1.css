@@ -1,0 +1,235 @@
+.title-log {
+    width: 50px;
+}
+
+.nav-title {
+    width: 250px;
+}
+
+.home-bg-img {
+    background-image: url(./Images/ux-787980_1920.jpg);
+    background-position: center;
+    height: 650px;
+}
+
+.home-title-img {
+    width: 450px;
+    margin-left: 150px;
+}
+
+.home-button {
+    position: absolute;
+    margin-left: 150px;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.home-bg {
+    position: absolute;
+    height: 650px;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.head-loveicon {
+    margin-left: 650px;
+    width: 25px;
+    height: 25px;
+}
+
+.head-loveicon::after,
+.head-loveicon::before {
+    content: " ";
+    display: inline-block;
+    background-color: deepskyblue;
+    width: 100px;
+    height: 5px;
+    position: relative;
+}
+
+.head-loveicon::after {
+    top: -15px;
+    left: 35px;
+}
+
+.head-loveicon::before {
+    top: 15px;
+    left: -109px;
+}
+
+.head-dis {
+    margin-left: 300px;
+    text-align: center;
+}
+
+.about-img-circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    margin-left: 180px;
+}
+
+.bg-fea-color {
+    opacity: 0.7;
+}
+
+.bg-fea-img {
+    height: 650px;
+    background-image: url(./Images/bg.png);
+}
+
+.fea-grid-cont {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+}
+
+.fea-grid-img {
+    width: 25px;
+    height: 25px;
+    margin-right: 50px;
+}
+
+.show-mob-img1 {
+    width: 400px;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+.show-mob-img2 {
+    position: absolute;
+    width: 400px;
+    top: 100px;
+    left: 100px;
+}
+
+.sub-email-img {
+    width: 25px;
+    height: 25px;
+}
+
+.scr-main-img1 {
+    position: relative;
+    left: 510px;
+    z-index: 3;
+}
+
+.scr-main-img2 {
+    z-index: 2;
+    position: absolute;
+    opacity: 0.7;
+    left: 350px;
+}
+
+.scr-main-img3 {
+    z-index: 2;
+    position: absolute;
+    opacity: 0.7;
+    left: 650px;
+}
+
+.scr-main-img4 {
+    z-index: 1;
+    position: absolute;
+    opacity: 0.5;
+    left: 250px;
+}
+
+.scr-main-img5 {
+    z-index: 1;
+    position: absolute;
+    opacity: 0.5;
+    left: 750px;
+}
+
+.test-main-img {
+    margin-left: 620px;
+}
+
+.col-star {
+    margin-left: 600px;
+}
+
+.GoldenStar {
+    width: 25px;
+    height: 25px;
+}
+
+.get-btn {
+    border-radius: 100px;
+}
+
+.store-button {
+    border-radius: 100px;
+}
+
+.play-btn {
+    width: 120px;
+    margin-left: 620px;
+}
+
+.price-container {
+    background-color: lightsteelblue;
+}
+
+.price-lines {
+    border-left: none;
+    border-right: none;
+}
+
+.list-style {
+    list-style: none;
+}
+
+.stat-img-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-left: 110px;
+    background-color: blue;
+}
+
+.FAQ-img1 {
+    position: absolute;
+    left: 50px;
+}
+
+.FAQ-img2 {
+    margin-left: 150px;
+}
+
+.map-img {
+    background-image: url(./Images/google-maps-and-driving-directions-canada-google-maps-api-interactive-world-map-with-countries-of-google-maps-and-driving-directions-canada.jpg);
+    width: 100%;
+    height: 780px;
+    background-position: center;
+}
+
+.getIn-cont {
+    position: absolute;
+    top: 11080px;
+    left: 200px;
+    width: 1000px;
+    height: 650px;
+}
+
+.tou-img {
+    width: 25px;
+    height: 25px;
+}
+
+.input-border {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.tou-img3 {
+    width: 50px;
+    height: 50px;
+}
+
+.insta-img {
+    width: 150px;
+}

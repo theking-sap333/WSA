@@ -1,0 +1,435 @@
+body{
+    margin: 0;
+    height: 2550px;
+}
+.topmess{
+    display: inline;
+    width: 100%;
+}
+.topmess p{
+    padding: 5px;
+}
+.topmess-left{
+    float: left;
+}
+.messleft span{
+    text-decoration: underline;
+    color: palevioletred;
+    cursor: pointer;
+}
+.topmess-right{
+    float: right;
+}
+/*********** Page main Content*******************************************************************************/
+.maincontents{
+}
+.backimg{
+    width: 100%;
+}
+.emerlogo{ 
+    width: 300px;
+    position: absolute;
+    top: 130px;
+    left: 800px;
+    }
+.memimg{
+    width: 400px;
+    position: relative;
+    top: -628px;
+    left: 100px;
+    z-index: 2;
+}
+.headcontainer{
+    width: 100%;
+    background: white;
+    height: 210px;
+    position: absolute;
+    top: 320px;
+    opacity: 0.5;
+    z-index: 1;
+}
+.mainhead{
+    margin: 0px;
+    position: absolute;
+    top: 330px;
+    left: 590px;
+    font-size: 55px;
+    font-family: sans-serif;
+    z-index: 2;
+}
+.mainhead span{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.courses{
+    position: absolute;
+    position: absolute;
+    top: 550px;
+    left: 590px;
+    font-size: 21px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.contbutton{    
+    position: absolute;
+    top: 630px;
+    left: 780px;
+    color: white;
+    background-image: linear-gradient(45deg, purple, rgb(241, 100, 124));
+    border-radius: 25px;
+    padding: 10px;
+    width: 370px;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.maincontents ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 720px;
+    left: 490px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;    }
+.maincontents li{
+    display: block;
+    float: left;
+    padding: 6px;    
+}
+.maincontents li:hover{
+    color:purple;
+    cursor: pointer;
+} 
+.maincontents a{
+    text-decoration: none;
+    color: black;
+}
+
+/********** Industry News***********************************************************************************/
+.newshead{
+    position: absolute;
+    top: 770px;
+    left: 600px;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+.newshead span{
+    font-weight: bold;
+}
+.iotcontainer{
+    background-color: grey;
+    width: 910px;
+    height: 202px;
+    position: absolute;
+    opacity: 0.3;
+    left: 414px;
+    top: 840px;    }
+.iot{
+    position: absolute;
+    top: 840px;
+    left: 50px;
+}
+.iotimg{
+}
+.iotcontent{
+    position: relative;
+    top: -200px;
+    left: 409px;
+    width: 880px;
+    font-family: sans-serif;
+}
+.buttons{
+    background-color: deeppink;
+    padding: 8px;
+    border-radius: 25px;
+    width: 105px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+}
+.chipcontainer{
+    background-color: grey;
+    width: 910px;
+    height: 202px;
+    position: absolute;
+    opacity: 0.3;
+    left: 50px;
+    top: 1090px;
+}
+.chip{
+    position: absolute;
+    top: 900px;
+    left: 50px;
+
+}
+.chipcontent{
+    position: relative;
+    top: 180px;
+    left: 20px;
+    width: 880px;
+    font-family: sans-serif;
+}
+.chipimg{
+    width: 364px;
+    height: 202px;
+    position: absolute;
+    left: 910px;
+}
+.line{
+    background-color: grey;
+    width: 700px;
+    height: 2px;
+    position: absolute;
+    top: 1340px;
+    left: 340px;    }
+
+/********** From the Blog***********************************************************************************/
+.bloghead{
+    position: absolute;
+    top: 1345px;
+    left: 600px;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+.bloghead span{
+    font-weight: bold;
+}
+.blogcont{
+    position: relative;
+    top: 20px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.blogcont1{
+    width: 550px;
+    float: left;
+    position: relative;
+    left: 50px;
+}
+.blogcont2{
+    position: relative;
+    left: -50px;
+    width: 550px;
+    float: right;
+}
+.blogcontainer{
+    width: 100%;
+    height: 220px;
+    background-color: grey;
+    opacity: 0.5;
+    position: relative;
+    top: 25px;
+    z-index: -1;    
+}
+.blogline{
+    width: 2px;
+    height: 200px;
+    background-color: grey;
+    position: relative;
+    top: -175px;
+    left: 646px;
+}
+.blogbutton{
+    background-color: deeppink;
+    padding: 8px;
+    border-radius: 25px;
+    width: 105px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
+/*********** Companies visited******************************************************************************/
+.companyhead{
+margin: 0;
+position: absolute;
+top: 1665px;
+left: 520px;
+font-size: 24px;
+font-family: sans-serif;
+}
+.companyhead span{
+    font-weight: bold;
+}
+.imggrid{
+    display: grid;
+    grid-auto-rows: 200px;
+    position: relative;
+    top: -100px;
+    border: 1px solid gray;
+}
+.grid1{
+    grid-area: 1/1/2/2;
+    background-color: rgb(228, 228, 228);
+}
+.grid2{
+    grid-area: 1/2/2/3;
+}
+.grid3{
+    grid-area: 1/3/2/4;
+    background-color: rgb(228, 228, 228);
+}
+.grid4{
+    grid-area: 1/4/2/5;
+}
+.grid5{
+    grid-area: 2/1/3/2;
+}
+.grid6{
+    grid-area: 2/2/3/3;
+    background-color: rgb(228, 228, 228);
+}
+.grid7{
+    grid-area: 2/3/3/4;
+}
+.grid8{
+    grid-area: 2/4/3/5;
+    background-color: rgb(228, 228, 228);
+}
+.america{
+    position: absolute;
+    top: 65px;
+left: 55px;
+width: 210px;
+height: 75px;    
+}
+.global{
+position: absolute;
+top: 65px;
+left: 390px;
+width: 210px;
+height: 75px;    }
+.methode{
+position: absolute;
+top: 65px;
+left: 730px;
+width: 210px;
+height: 75px;    }
+.nxp{    
+position: absolute;
+top: 65px;
+left: 1070px;
+width: 210px;
+height: 75px;    }
+.sasken{
+position: absolute;
+top: 250px;
+left: 55px;
+width: 210px;
+height: 75px;    }
+.tcoe{
+position: absolute;
+top: 250px;
+left: 400px;
+width: 210px;
+height: 110px;    }
+.smart{
+position: absolute;
+top: 250px;
+left: 730px;
+width: 210px;
+height: 75px;    }
+.landt{
+position: absolute;
+top: 250px;
+left: 1075px;
+width: 210px;
+height: 75px;    }
+
+/*********** Students review*******************************************************************************/
+.students-say{
+margin: 0;
+position: absolute;
+top: 2150px;
+left: 520px;
+font-size: 24px;
+font-family: sans-serif;
+}
+.students-say span{
+    font-weight: bold;
+}
+.studentsreview{
+    position: absolute;
+top: 2210px;
+left: 30px;
+}
+.review-background-img{
+
+}
+.reviewimg{
+    width: 300px;
+padding: 10;    
+}
+.bottomcontainer{
+    width: 100%;
+    height: 60px;
+    background-color: deeppink;
+    position: absolute;
+    top: 2435px;
+}
+
+/*********** Bottom message********************************************************************************/
+.bottommess{
+    position: absolute;
+top: 2430px;
+font-family: sans-serif;
+color: white;    
+}
+.bottombutton{
+    float: right;
+    background-color: white;
+    padding: 8px;
+    border-radius: 25px;
+    width: 220px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+top: 15px;
+left: 1090px;
+font-size: 20px;
+}
+.nextbatch{
+    margin: 0;
+display: block;
+float: left;
+font-size: 32px;
+position: relative;
+left: 30px;    
+top: 20px;
+}
+/*********** Copyright**************************************************************************************/
+.copyright{
+    position: relative;
+    top: 280px;
+    }
+.social{
+    position: relative;
+    top: 245px;
+    left: 1130px;
+    width: 210px;
+    display: grid;    
+    }
+.grid-follow{
+    position: relative;
+    top: -15px;
+}
+.facebook{
+    grid-area: 1/2/2/3;
+}
+.googleplus{
+    grid-area: 1/3/2/4;
+}
+.twitter{
+    grid-area: 1/4/2/5;
+}
+.social-img{
+    width: 20px;
+    height: 20px;
+}
